@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E51C4CEF26B46D3B0006B711 /* CheckError.c in Sources */ = {isa = PBXBuildFile; fileRef = E51C4CEE26B46D3B0006B711 /* CheckError.c */; };
+		E51C4CF526B46E100006B711 /* FindAudioComponent.c in Sources */ = {isa = PBXBuildFile; fileRef = E51C4CF426B46E100006B711 /* FindAudioComponent.c */; };
+		E51C4CFA26B4706C0006B711 /* BuildAudioComponentDescriptionForFilePlayer.c in Sources */ = {isa = PBXBuildFile; fileRef = E51C4CF926B4706C0006B711 /* BuildAudioComponentDescriptionForFilePlayer.c */; };
+		E51C4CFE26B472060006B711 /* OpenAudioFile.c in Sources */ = {isa = PBXBuildFile; fileRef = E51C4CFD26B472060006B711 /* OpenAudioFile.c */; };
+		E51C4D0326B484D30006B711 /* GetAudioFileAudioStreamBasicDescription.c in Sources */ = {isa = PBXBuildFile; fileRef = E51C4D0226B484D30006B711 /* GetAudioFileAudioStreamBasicDescription.c */; };
+		E51C4D0826B4872C0006B711 /* BuildAudioComponentDescriptionForDefaultOutput.c in Sources */ = {isa = PBXBuildFile; fileRef = E51C4D0726B4872C0006B711 /* BuildAudioComponentDescriptionForDefaultOutput.c */; };
+		E51C4D0C26B487F00006B711 /* GetNumberOfPackets.c in Sources */ = {isa = PBXBuildFile; fileRef = E51C4D0B26B487F00006B711 /* GetNumberOfPackets.c */; };
+		E51C4D1026B48CE70006B711 /* StopAudioOutputUnit.c in Sources */ = {isa = PBXBuildFile; fileRef = E51C4D0F26B48CE70006B711 /* StopAudioOutputUnit.c */; };
+		E51C4D1626B48E390006B711 /* StopFilePlayerAudioUnit.c in Sources */ = {isa = PBXBuildFile; fileRef = E51C4D1526B48E390006B711 /* StopFilePlayerAudioUnit.c */; };
+		E51C4D1A26B48F870006B711 /* CloseAudioFile.c in Sources */ = {isa = PBXBuildFile; fileRef = E51C4D1926B48F870006B711 /* CloseAudioFile.c */; };
 		E5794C2D26B1BE6400B18C35 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E5794C2C26B1BE6400B18C35 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +33,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E51C4CED26B46D3B0006B711 /* CheckError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckError.h; sourceTree = "<group>"; };
+		E51C4CEE26B46D3B0006B711 /* CheckError.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CheckError.c; sourceTree = "<group>"; };
+		E51C4CF326B46E100006B711 /* FindAudioComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindAudioComponent.h; sourceTree = "<group>"; };
+		E51C4CF426B46E100006B711 /* FindAudioComponent.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindAudioComponent.c; sourceTree = "<group>"; };
+		E51C4CF826B4706C0006B711 /* BuildAudioComponentDescriptionForFilePlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuildAudioComponentDescriptionForFilePlayer.h; sourceTree = "<group>"; };
+		E51C4CF926B4706C0006B711 /* BuildAudioComponentDescriptionForFilePlayer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BuildAudioComponentDescriptionForFilePlayer.c; sourceTree = "<group>"; };
+		E51C4CFC26B472060006B711 /* OpenAudioFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenAudioFile.h; sourceTree = "<group>"; };
+		E51C4CFD26B472060006B711 /* OpenAudioFile.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = OpenAudioFile.c; sourceTree = "<group>"; };
+		E51C4D0026B483280006B711 /* PlayerData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerData.h; sourceTree = "<group>"; };
+		E51C4D0126B484D30006B711 /* GetAudioFileAudioStreamBasicDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetAudioFileAudioStreamBasicDescription.h; sourceTree = "<group>"; };
+		E51C4D0226B484D30006B711 /* GetAudioFileAudioStreamBasicDescription.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GetAudioFileAudioStreamBasicDescription.c; sourceTree = "<group>"; };
+		E51C4D0626B4872C0006B711 /* BuildAudioComponentDescriptionForDefaultOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuildAudioComponentDescriptionForDefaultOutput.h; sourceTree = "<group>"; };
+		E51C4D0726B4872C0006B711 /* BuildAudioComponentDescriptionForDefaultOutput.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BuildAudioComponentDescriptionForDefaultOutput.c; sourceTree = "<group>"; };
+		E51C4D0A26B487F00006B711 /* GetNumberOfPackets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetNumberOfPackets.h; sourceTree = "<group>"; };
+		E51C4D0B26B487F00006B711 /* GetNumberOfPackets.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GetNumberOfPackets.c; sourceTree = "<group>"; };
+		E51C4D0E26B48CE70006B711 /* StopAudioOutputUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StopAudioOutputUnit.h; sourceTree = "<group>"; };
+		E51C4D0F26B48CE70006B711 /* StopAudioOutputUnit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = StopAudioOutputUnit.c; sourceTree = "<group>"; };
+		E51C4D1426B48E390006B711 /* StopFilePlayerAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StopFilePlayerAudioUnit.h; sourceTree = "<group>"; };
+		E51C4D1526B48E390006B711 /* StopFilePlayerAudioUnit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = StopFilePlayerAudioUnit.c; sourceTree = "<group>"; };
+		E51C4D1826B48F870006B711 /* CloseAudioFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CloseAudioFile.h; sourceTree = "<group>"; };
+		E51C4D1926B48F870006B711 /* CloseAudioFile.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CloseAudioFile.c; sourceTree = "<group>"; };
 		E5794C2926B1BE6400B18C35 /* ConnectAudioUnitsTogether */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ConnectAudioUnitsTogether; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5794C2C26B1BE6400B18C35 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +69,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E51C4CEC26B46D260006B711 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E51C4CED26B46D3B0006B711 /* CheckError.h */,
+				E51C4CEE26B46D3B0006B711 /* CheckError.c */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E51C4CF226B46DDA0006B711 /* AudioUtils */ = {
+			isa = PBXGroup;
+			children = (
+				E51C4CF326B46E100006B711 /* FindAudioComponent.h */,
+				E51C4CF426B46E100006B711 /* FindAudioComponent.c */,
+				E51C4CF826B4706C0006B711 /* BuildAudioComponentDescriptionForFilePlayer.h */,
+				E51C4CF926B4706C0006B711 /* BuildAudioComponentDescriptionForFilePlayer.c */,
+				E51C4CFC26B472060006B711 /* OpenAudioFile.h */,
+				E51C4CFD26B472060006B711 /* OpenAudioFile.c */,
+				E51C4D0126B484D30006B711 /* GetAudioFileAudioStreamBasicDescription.h */,
+				E51C4D0226B484D30006B711 /* GetAudioFileAudioStreamBasicDescription.c */,
+				E51C4D0626B4872C0006B711 /* BuildAudioComponentDescriptionForDefaultOutput.h */,
+				E51C4D0726B4872C0006B711 /* BuildAudioComponentDescriptionForDefaultOutput.c */,
+				E51C4D0A26B487F00006B711 /* GetNumberOfPackets.h */,
+				E51C4D0B26B487F00006B711 /* GetNumberOfPackets.c */,
+				E51C4D0E26B48CE70006B711 /* StopAudioOutputUnit.h */,
+				E51C4D0F26B48CE70006B711 /* StopAudioOutputUnit.c */,
+				E51C4D1426B48E390006B711 /* StopFilePlayerAudioUnit.h */,
+				E51C4D1526B48E390006B711 /* StopFilePlayerAudioUnit.c */,
+				E51C4D1826B48F870006B711 /* CloseAudioFile.h */,
+				E51C4D1926B48F870006B711 /* CloseAudioFile.c */,
+			);
+			path = AudioUtils;
+			sourceTree = "<group>";
+		};
 		E5794C2026B1BE6400B18C35 = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +122,10 @@
 		E5794C2B26B1BE6400B18C35 /* ConnectAudioUnitsTogether */ = {
 			isa = PBXGroup;
 			children = (
+				E51C4CF226B46DDA0006B711 /* AudioUtils */,
+				E51C4CEC26B46D260006B711 /* Utils */,
 				E5794C2C26B1BE6400B18C35 /* main.c */,
+				E51C4D0026B483280006B711 /* PlayerData.h */,
 			);
 			path = ConnectAudioUnitsTogether;
 			sourceTree = "<group>";
@@ -118,7 +186,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E51C4CFE26B472060006B711 /* OpenAudioFile.c in Sources */,
 				E5794C2D26B1BE6400B18C35 /* main.c in Sources */,
+				E51C4CF526B46E100006B711 /* FindAudioComponent.c in Sources */,
+				E51C4D0826B4872C0006B711 /* BuildAudioComponentDescriptionForDefaultOutput.c in Sources */,
+				E51C4CEF26B46D3B0006B711 /* CheckError.c in Sources */,
+				E51C4D0326B484D30006B711 /* GetAudioFileAudioStreamBasicDescription.c in Sources */,
+				E51C4D1A26B48F870006B711 /* CloseAudioFile.c in Sources */,
+				E51C4D1026B48CE70006B711 /* StopAudioOutputUnit.c in Sources */,
+				E51C4D1626B48E390006B711 /* StopFilePlayerAudioUnit.c in Sources */,
+				E51C4D0C26B487F00006B711 /* GetNumberOfPackets.c in Sources */,
+				E51C4CFA26B4706C0006B711 /* BuildAudioComponentDescriptionForFilePlayer.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
