@@ -52,7 +52,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "&apos;/Users/panayotismatsinopoulos/60studi-02.mp3&apos;"
+            argument = "&apos;/Users/panayotismatsinopoulos/the-first-noel.mp3&apos;"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
