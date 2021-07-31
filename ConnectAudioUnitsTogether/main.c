@@ -19,7 +19,6 @@
 #include "StopAudioOutputUnit.h"
 #include "StopFilePlayerAudioUnit.h"
 #include "CloseAudioFile.h"
-#include <CoreAudio/HostTime.h>
 
 void InstantiateFilePlayerAudioUnit(AudioUnit *filePlayerAudioUnit) {
   AudioComponentDescription filePlayerAudioComponentDescription = {0};
@@ -204,6 +203,12 @@ void InitializeSynchronizationState(AppState *appState) {
   pthread_cond_init(&(appState->cond), NULL);
 }
 
+void ReleaseResources(AppState *appState, AudioUnit filePlayerAudioUnit, AudioUnit defaultOutputAudioUnit) {
+  StopAudioOutputUnit(defaultOutputAudioUnit);
+  StopFilePlayerAudioUnit(filePlayerAudioUnit);
+  CloseAudioFile(appState->inputFile);
+}
+
 int main(int argc, const char * argv[]) {
   if (argc < 2) {
     fprintf(stderr,
@@ -229,10 +234,7 @@ int main(int argc, const char * argv[]) {
   
   WaitForPlaybackToFinish(&appState);
   
-  // need to release resources
-  StopAudioOutputUnit(defaultOutputAudioUnit);
-  StopFilePlayerAudioUnit(filePlayerAudioUnit);
-  CloseAudioFile(appState.inputFile);
-
+  ReleaseResources(&appState, defaultOutputAudioUnit, filePlayerAudioUnit);
+  
   return 0;
 }
