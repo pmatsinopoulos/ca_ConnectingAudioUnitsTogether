@@ -106,7 +106,7 @@ void CalculateFilePlayerOutputFrames(AudioUnit filePlayerAudioUnit, AppState *ap
   appState->numberOfOutputFrames = appState->numberOfInputFrames * (outputFormat.mSampleRate / appState->inputFormat.mSampleRate);
 }
 
-AudioUnit SetUpFilePlayerUnit(AppState *appState) {
+AudioUnit SetUpFilePlayerAudioUnit(AppState *appState) {
   AudioUnit filePlayerAudioUnit;
   
   InstantiateFilePlayerAudioUnit(&filePlayerAudioUnit);
@@ -222,7 +222,7 @@ int main(int argc, const char * argv[]) {
   
   GetAudioFileAudioStreamBasicDescription(appState.inputFile, &appState.inputFormat);
     
-  AudioUnit filePlayerAudioUnit = SetUpFilePlayerUnit(&appState);
+  AudioUnit filePlayerAudioUnit = SetUpFilePlayerAudioUnit(&appState);
 
   AudioUnit defaultOutputAudioUnit = SetUpDefaultOutputAudioUnit(&appState);
   
