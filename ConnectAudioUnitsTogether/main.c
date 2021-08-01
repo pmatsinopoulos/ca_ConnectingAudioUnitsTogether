@@ -34,15 +34,13 @@ void InstantiateFilePlayerAudioUnit(AudioUnit *filePlayerAudioUnit) {
   CheckError(AudioUnitInitialize(*filePlayerAudioUnit), "Initializing the filePlayerAudioUnit");
 }
 
-void CalculateNumberOfFramesToPlay(AppState *appState) {
-  UInt64 packetsCount = 0;
-  GetNumberOfPackets(appState->inputFile, "Getting the number of packets from the input file", &packetsCount);
-  appState->numberOfInputFrames = packetsCount * appState->inputFormat.mFramesPerPacket;
-}
-
 void ScheduleTheWholeFileForPlayback(AudioUnit filePlayerAudioUnit, AppState *appState) {
-  CalculateNumberOfFramesToPlay(appState);
+  UInt64 packetsCount = 0;
   
+  GetNumberOfPackets(appState->inputFile, "Getting the number of packets from the input file", &packetsCount);
+  
+  appState->numberOfInputFrames = packetsCount * appState->inputFormat.mFramesPerPacket;
+
   ScheduledAudioFileRegion rgn;
   
   memset(&(rgn.mTimeStamp), 0, sizeof(rgn.mTimeStamp));
