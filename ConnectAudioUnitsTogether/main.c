@@ -41,6 +41,8 @@ void CalculateNumberOfFramesToPlay(AppState *appState) {
 }
 
 void ScheduleTheWholeFileForPlayback(AudioUnit filePlayerAudioUnit, AppState *appState) {
+  CalculateNumberOfFramesToPlay(appState);
+  
   ScheduledAudioFileRegion rgn;
   
   memset(&(rgn.mTimeStamp), 0, sizeof(rgn.mTimeStamp));
@@ -71,8 +73,6 @@ void SetFilePlayerFileToPlay(AudioUnit filePlayerAudioUnit, AppState *appState) 
                                   &(appState->inputFile),
                                   sizeof(appState->inputFile)),
              "Audio Unit setting property value for kAudioUnitProperty_ScheduledFileIDs");
-  
-  CalculateNumberOfFramesToPlay(appState);
   
   ScheduleTheWholeFileForPlayback(filePlayerAudioUnit, appState);
 }
