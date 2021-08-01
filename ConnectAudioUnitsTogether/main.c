@@ -201,7 +201,7 @@ void InitializeSynchronizationState(AppState *appState) {
   pthread_cond_init(&(appState->cond), NULL);
 }
 
-void ReleaseResources(AppState *appState, AudioUnit filePlayerAudioUnit, AudioUnit defaultOutputAudioUnit) {
+void ReleaseResources(AppState *appState, AudioUnit defaultOutputAudioUnit, AudioUnit filePlayerAudioUnit) {
   StopAudioOutputUnit(defaultOutputAudioUnit);
   StopFilePlayerAudioUnit(filePlayerAudioUnit);
   CloseAudioFile(appState->inputFile);
@@ -233,6 +233,6 @@ int main(int argc, const char * argv[]) {
   WaitForPlaybackToFinish(&appState);
   
   ReleaseResources(&appState, defaultOutputAudioUnit, filePlayerAudioUnit);
-  
+
   return 0;
 }
